@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      nav {
+        margin: 20px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      #content {
+        max-width: 800px;
+        margin: 20px;
+        text-align: center;
+      }
+
+      nav a.home {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #nation-container {
+        margin-top: 20px;
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      #nation-container img {
+        width: 100px;
+        height: 66px;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+      }
+
+      #nation-container img.selected {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      #nation-info {
+        margin-top: 60px;
+        width: 800px;
+      }
+
+      #nation-info img {
+        max-width: 300px;
+      }
+
+      #nation-info .info1,
+        #nation-info .info2,
+        #nation-info .info3,
+        #nation-info .info4 {
+            display: none;
+        }
+
+        #nation-info .selected-info {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ICONIC SKYSCRAPERS IN THE WORLD</h1>
+    </header>
+
+    <nav>
+      <a href="home.html" class="home">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div id="content">
+      <div id="nation-container">
+        <img
+          src="img/FLAG/CHINA.png"
+          class="selected"
+          alt="china"
+          onclick="showImageInfo(1)"
+        />
+        <img
+          src="img/FLAG/United Arab Emirates.jpg"
+          alt="United Arab Emirates"
+          onclick="showImageInfo(2)"
+        />
+        <img
+          src="img/FLAG/UNITED KINDOM.jpg"
+          alt="United Kingdom"
+          onclick="showImageInfo(3)"
+        />
+        <img
+          src="img/FLAG/UNITED STATE.png"
+          alt="United State"
+          onclick="showImageInfo(4)"
+        />
+      </div>
+
+      <div id="nation-info">
+        <!-- china -->
+        <div class="info1 selected-info">
+          <h2>CHINA</h2>
+          <h3>1. Shanghai Tower</h3>
+          <img src="img/SKYSCRAPERS/CHINA/Shanghaitower.jpg" alt="ShanghaiTower">
+          <p>Shanghai Tower was built in the early 2015, since then it has been holding the crown of China's tallest building for more than 3 years.
+            Now the observation deck on 118th floor of Shanghai Tower has become one of the most popular tourist attractions in Shanghai, it's the highest accessible point in the city, from there visitors can get the spectacular 360 degree aerial view of city of Shanghai.</p>
+
+            <h3>2.Ping An Finance Center</h3>
+            <img src="img/SKYSCRAPERS/CHINA/Pingan_International_Finance_Center.jpg" alt="Pingan">
+            <p>Ping An Finance Center was initially designed to be 660 meters tall with the intention to make it the tallest skyscraper in the nation, there was a 60-meter spire at top in the original design, but in the later the spire was removed from the design when the tower was under construction and had been built to a height close to 600 meters, due to the concern on the security of a nearby airline.</p>
+
+            <h3>3.Conton Tower</h3>
+            <img src="img/SKYSCRAPERS/CHINA/CantonTower.jpg" alt="CantonTower">
+            <p>Canton Tower is the tallest structure in city of Guangzhou, it's also the tallest broadcasting tower in China and second tallest broadcasting tower in the world, only after Tokyo Skytree in Tokyo. The roof height of the tower is 454 meters.</p>
+
+            <h3>4.China Zun Tower</h3>
+            <img src="img/SKYSCRAPERS//CHINA/China_Zun.jpg" alt="Zun">
+            <p>China Zun Tower is the tallest building in the capital city of China, the building is located in the core area of the city's Central Business District, the formal name of the building is CITIC Plaza, it serves as the headquarters of CITIC Group, the name China Zun is more widely used, Zun is a sort of vessel used for containing wine in ancient China, it was Zun inspired the architects to come up the idea of the building's unique shape.</p>
+
+            <h3>5.Shanghai World Financial Center</h3>
+            <img src="img/SKYSCRAPERS/CHINA/ShanghaiWorldFinancialCenter.jpg" alt="ShanghaiWorldFinancialCenter">
+            <p>Shanghai World Financial Center is the second tallest building in Shanghai and was once the world's tallest building measured by roof height from 2008 to 2009. The building is one of the most distinctive buildings in Shanghai as the large aperture on the top makes the building appears like a bottle opener. The sky bridge above the large aperture contains an observation deck, which was highest in the world upon its opening in 2008.</p>
+
+            <h3>6.Orienal Pearl Tower</h3>
+            <img src="img/SKYSCRAPERS/CHINA/oriental-pearl-tower.jpg" alt="Oriental-pearl-tower">
+            <p>Oriental Pearl Tower is a broadcasting & observation tower in Shanghai, it's one of the landmark buildings of Shanghai, and before the completion of SWFC in 2008, it had been the tallest structure in China. The observation decks are set inside the spheres of the tower, offering aerial views of the river and buildings on the sides of it, Oriental Pearl Tower is one of the most popular points of interest in Shanghai.</p>
+        </div>
+        <!-- United Arab Emirates -->
+        <div class="info2">
+          <h2>United Arab Emirates</h2>
+          <h3>1.The Burj Khalifa</h3>
+          <img src="img/SKYSCRAPERS/United Arab Emirates/Burj_Khalifa.jpg" alt="BurjKhalifa">
+          <p>Located in the vibrant community of Downtown Dubai, The Burj Khalifa is currently the tallest building in the world. The structure is a mixed-use development that features 163 floors. Completed in 2009, the design derives its form from the flower, Spider Lily. Apart from holding the title of the tallest tower in the world, it also holds records for the tallest free-standing structure, Dubai tallest building with the most floors, and the world’s highest elevator installation.</p>
+          
+          <h3>2.The Marina</h3>
+          <img src="img/SKYSCRAPERS/United Arab Emirates/Marina.jpeg" alt="Marina">
+          <p>The second Dubai tallest building i.e. the Marina 101 is located at the Marina waterfront. The 101-storey structure consists of several visual elements and projections that help break the monotony of the structure. The structure holds the title of the tallest residential tower, surpassing 432 Park Avenue by just 1m.</p>
+
+          <h3>3.The Rose Rayhaan</h3>
+          <img src="img/SKYSCRAPERS/United Arab Emirates/RoseRayhaan.jpg" alt="RoseRayhaan">
+          <p>The Rose Rayhaan, also known as Rose Tower is a 72 storey structure on the Sheikh Zayed Road. It held the title of the world’s tallest hotel from 2009-2012. The two cylindrical forms at the sides of the tower fold into one another and flatten at the top to form a peak of intersecting petals.</p>
+          
+          <h3>4.The Index</h3>
+          <img src="img/SKYSCRAPERS/United Arab Emirates/TheIndex.jpg" alt="TheIndex">
+          <p>Situated in Dubai International Finance Center, the 80 storey structure was one of the first to make use of design principles to combat the surrounding environment.</p>
+          
+        </div>
+        <!-- UNITED KINGDOM -->
+        <div class="info3">
+          <h2>UNITED KINGDOM</h2>
+          <h3>1. The Shard</h3>
+          <img src="img/SKYSCRAPERS/UNITED KINGDOM/TheShard.jpg" alt="TheShard">
+          <p>The Shard,[a] also referred to as the Shard London Bridge[12] and formerly London Bridge Tower,[13] is a 72-storey mixed use development supertall skyscraper, designed by the Italian architect Renzo Piano, in Southwark, London, that forms part of The Shard Quarter development. Standing 309.6 metres (1,016 feet) high, The Shard is the tallest building in the United Kingdom, and the seventh-tallest building in Europe, the second-tallest outside Russia, only 40cm less than the Varso Tower in Warsaw.[14] It is also the second-tallest free-standing structure in the United Kingdom, after the concrete tower of the Emley Moor transmitting station. The Shard replaced Southwark Towers, a 24-storey office block built on the site in 1975.</p>
+
+          <h3>2.The Leadenhall Street</h3>
+          <img src="img/SKYSCRAPERS/UNITED KINGDOM/TheLeadenhallBuilding.jpg" alt="TheLeadenhallBuilding">
+          <p>122 Leadenhall Street, which is also known as the Leadenhall Building, is a 225-metre-tall (738 ft) skyscraper in central London. It opened in July 2014 and was designed by the Rogers Stirk Harbour + Partners; it is known informally as The Cheesegrater because of its distinctive wedge shape similar to that of the kitchen utensil with the same name.[5] It is one of numerous tall buildings recently completed or under construction in the City of London financial district, including 20 Fenchurch Street, 22 Bishopsgate and The Scalpel.</p>
+
+          <h3>3.Hamptom Tower</h3>
+          <img src="img/SKYSCRAPERS//UNITED KINGDOM/HamptonTower.jpg" alt="HamptonTower">
+          <p>Hampton Tower will reach a height of 214.5 m (704 ft); making it the second-tallest residential skyscraper currently proposed for London.[4][5] There will also be new public and retail space, cafés and restaurants as part of the scheme.[6]</p>
+
+          <h3>4.The Heron Tower</h3>
+          <img src="img/SKYSCRAPERS/UNITED KINGDOM/Heron_Tower.JPG" alt="Heron_Tower">
+          <p>Salesforce Tower, 110 Bishopsgate (formerly, and still commonly known as, Heron Tower) is a commercial skyscraper in London. It stands 230 metres (755 ft) tall[4] including its 28-metre (92 ft) mast making it the second tallest building in the City of London financial district[5] and the fifth tallest in Greater London and the United Kingdom, after the Shard in Southwark and One Canada Square at Canary Wharf. 110 Bishopsgate is located on Bishopsgate and is bordered by Camomile Street, Outwich Street and Houndsditch.</p>
+
+        </div>
+        <!-- UNITED STATE -->
+        <div class="info4">
+          <h2>UNITED STATE</h2>
+          <h3>1.One World Trade Centre</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/OneWorldTradeCentre.jpg" alt="OneWorldTradeCentre">
+          <p>First unveiled to the public in 2014, the One World Trade Centre was built in the same location as the former North Tower of the original Twin Towers World Trade Centre buildings destroyed during 9/11. With 94 floors that reach 1,776 feet into the sky, this commercial office building is now widely accepted as the tallest construction in the United States.</p>
+
+          <h3>2.One Vanderbilt</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/One_Vanderbilt.jpg" alt="OneVanderbilt">
+          <p>New York’s One Vanderbilt opened in 2020, and its 93 floors soaring 1,401 feet into the sky immediately captured public attention. As well as hosting multiple commercial office spaces, the building is also something of a tourist attraction, with a vast observation deck, exhibition space and interactive visitor area housed on the 73rd floor. </p>
+
+          <h3>3.432 Park Avenue</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/432_Park_Avenue.jpg" alt="432_Park_Avenue">
+          <p>432 Park Avenue’s towering block of 104 private apartments opened in 2015. At 1,396 feet high, it immediately made the top ten tallest buildings in the U.S. list. Prices for these exclusive, private apartments run into tens of millions each, making them among the most elite properties in the entire country.</p>
+
+          <h3>4.30 Hudson Yards</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/30_Hudson_Yards.jpg" alt="30_Hudson_Yards">
+          <p>At 103 floors high and 1,296 feet in height, this impressive monolith has acted as host to some of the city’s most prestigious businesses, including CNN and Warner Bros since opening in 2019. The building is also a popular tourist attraction, featuring an observation deck with a transparent floor on the 100th level, and a futuristic bar and restaurant on the 101st floor.</p>
+
+          <h3>5. Empire State Building</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/Empire_State_Building.jpg" alt="Empire_State_Building">
+          <p>One of the city’s first true skyscrapers, the Art Deco masterpiece that is the Empire State Building still ranks in the top ten tallest buildings in the U.S., with its 102 floors reaching 1,250 feet into the sky. When it first opened in 1931, the Empire State Building captured public imagination around the world as the tallest building of all time, and it has remained a true icon of New York City ever since.</p>
+
+          <h3>6.Steinway Tower</h3>
+          <img src="img/SKYSCRAPERS/UNITED STATE/SteinwayTower.jpg" alt="SteinwayTower">
+          <p>The official title for this marvel of architectural engineering is 111 West 57th Street, although it is more commonly known as the catchier Steinway Tower, referencing the famed Steinway & Sons piano store that sits at the skyscraper’s base. Once a leading center where musicians would congregate, Steinway’s dwindling business meant they had to sell off the land to the developers who planned the tower’s construction. With 84 floors at 1,428 feet high, Steinway Tower is the fourth tallest building in the U.S. </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showImageInfo(imageNumber) {
+
+        var images = document.querySelectorAll('#nation-container img');
+        
+        images.forEach(function(img) {
+            img.classList.remove('selected');
+        });
+
+        var selectedImage = document.querySelector('#nation-container img:nth-child(' + imageNumber + ')');
+        selectedImage.classList.add('selected');
+
+        var imageInfo = document.getElementById('nation-info');
+        var infoDivs = document.querySelectorAll('#nation-info > div');
+        infoDivs.forEach(function(infoDiv) {
+            infoDiv.classList.remove('selected-info');
+        });
+
+        var selectedInfoDiv = document.querySelector('#nation-info .info' + imageNumber);
+        selectedInfoDiv.classList.add('selected-info');
+      }
+    </script>
+  </body>
+</html>
